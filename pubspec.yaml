@@ -29,11 +29,13 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   animate_do: ^3.0.2
+  audioplayers: ^4.1.0
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
   go_router: ^7.1.1
   intl: ^0.18.1
+  just_audio: ^0.9.34
   provider: ^6.0.5
   video_player: ^2.6.1
 
