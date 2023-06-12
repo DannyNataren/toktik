@@ -22,14 +22,16 @@ environment:
   sdk: '>=2.19.6 <3.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
+# To automatically upgrade your package dependencies to the1 latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
   animate_do: ^3.0.2
+  audioplayers: ^4.1.0
   cupertino_icons: ^1.0.2
+  dio: ^5.2.0
   flutter:
     sdk: flutter
   go_router: ^7.1.1

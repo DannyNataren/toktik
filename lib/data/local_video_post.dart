@@ -1,5 +1,6 @@
 List<Map<String, dynamic>> videoPosts = [
   {
+    'id': 1,
     'originalName':'jsdhaskldjskladjnasjdhasjdhas',
     'name': 'Subiendo escaleras automáticas',
     'caption': 'Subiendo escaleras automáticas',
@@ -9,6 +10,7 @@ List<Map<String, dynamic>> videoPosts = [
     'type':'video'
   },
   {
+    'id': 2,
     'originalName':'jsdhaskldjskladjnasjdhasjdhas',
     'name': 'Planta apreciada por peatones',
     'caption': 'Planta apreciada por peatones',
@@ -18,6 +20,7 @@ List<Map<String, dynamic>> videoPosts = [
     'type':'video'
   },
   {
+    'id':3,
     'originalName':'jsdhaskldjskladjnasjdhasjdhas',
     'name': 'Que borroso veo todo!',
     'caption': 'Que borroso veo todo!',
@@ -27,6 +30,7 @@ List<Map<String, dynamic>> videoPosts = [
     'type':'video'
   },
   {
+    'id': 4,
     'originalName':'jsdhaskldjskladjnasjdhasjdhas',
     'name': '¿Esto es trigo? que interesante',
     'caption': '¿Esto es trigo? que interesante',
@@ -36,6 +40,7 @@ List<Map<String, dynamic>> videoPosts = [
     'type':'video'
   },
   {
+    'id': 5,
     'originalName':'jsdhaskldjskladjnasjdhasjdhas',
     'name': 'El COVID no me afecta',
     'caption': 'El COVID no me afecta',
@@ -45,6 +50,7 @@ List<Map<String, dynamic>> videoPosts = [
     'type':'video'
   },
   {
+    'id':6,
     'originalName':'jsdhaskldjskladjnasjdhasjdhas',
     'name': 'No quiero ir a trabajar hoy señor Stark',
     'caption': 'No quiero ir a trabajar hoy señor Stark',
@@ -54,6 +60,7 @@ List<Map<String, dynamic>> videoPosts = [
     'type':'video'
   },
   {
+    'id':7,
     'originalName':'jsdhaskldjskladjnasjdhasjdhas',
     'name': 'Limpiar nunca fue tan divertido',
     'caption': 'Limpiar nunca fue tan divertido',
@@ -63,6 +70,7 @@ List<Map<String, dynamic>> videoPosts = [
     'type':'video'
   },
   {
+    'id': 8,
     'originalName':'jsdhaskldjskladjnasjdhasjdhas',
     'name': '¿Ya llegamos a la India?... umm si',
     'caption': '¿Ya llegamos a la India?... umm si',
