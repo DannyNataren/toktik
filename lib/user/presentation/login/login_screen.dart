@@ -1,6 +1,10 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:toktik_clean/shared/home.router.dart';
 import 'package:toktik_clean/user/domain/useCases/user_usecases.dart';
+import 'package:toktik_clean/user/presentation/providers/user.provider.dart';
 
 import '../register/register_screen.dart';
 
@@ -12,6 +16,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final discoverUserProvider = context.watch<DiscoverUserProvider>();
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: ListView(
@@ -48,7 +53,7 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(height: 45),
                 Container(
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(239, 242, 243, 210), // Color crema para el fondo
+                    color: const Color.fromARGB(239, 242, 243, 210), // Color crema para el fondo
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.orange, width: 2.0), // Contorno de color naranja
                   ),
@@ -90,7 +95,16 @@ class LoginScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  onPressed: () async {},
+                  onPressed: () async {
+                      String username = _usernameController.text;
+                      String password = _passwordController.text;
+                      await discoverUserProvider.login(username, password);
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomeRouter())
+                      );
+                      
+                  },
                   child: const Text(
                     'Iniciar sesión',
                     style: TextStyle(

@@ -26,4 +26,12 @@ class DiscoverProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> post(String file, int idUser, String type, bool reload) async{
+    await videoUseCases.create(file, idUser, type);
+    if (reload){
+      videoList = [];
+      await this.loadNextPAge();
+    }
+  }
+
 }

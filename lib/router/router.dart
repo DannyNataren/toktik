@@ -13,7 +13,7 @@ final appRouter = GoRouter(
     GoRoute(
       name: 'home',
       path: '/',
-      builder:  (context, state) =>  LoginScreen()//const VideoIndex(),
+      builder:  (context, state) =>  VideoIndex()//const VideoIndex(),
     ),
     GoRoute(
       path: '/audios',

@@ -24,4 +24,9 @@ class DiscoverAudioProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  void reloadAudios() async {
+    videoList = [];
+    await this.loadNextPAge();
+  }
+
 }

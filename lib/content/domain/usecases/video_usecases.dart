@@ -11,8 +11,8 @@ class ContentUseCases {
   Future<Content> getByPublicId(String publicId) async {
     return await videoRepository.getByPublicId(publicId);
   }
-  Future<Content> create(Content content) async {
-    return videoRepository.createContent(content);
+  Future<void> create(String file, int idUser, String type) async {
+    return videoRepository.createContent(file, idUser, type);
   }
   Future<String> delete(String publicId) async {
     return videoRepository.deleteContent(publicId);

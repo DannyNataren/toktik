@@ -16,8 +16,8 @@ class ContentRepositoryImpl implements ContentRepository {
   }
   
   @override
-  Future<Content> createContent(Content content) async{
-    return await videoDataSource.createContent(content);
+  Future<void> createContent(String file, int idUser, String type) async{
+    return await videoDataSource.createContent(file, idUser, type);
   }
   
   @override
